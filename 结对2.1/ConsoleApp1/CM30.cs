@@ -25,35 +25,7 @@ namespace ConsoleApp1
             }       
                 return false;
         }
-        /// <summary>
-        /// 问题验证
-        /// </summary>
-        /// <param name="input"></param>
-        /// <param name="l"></param>
-        /// <returns></returns>
-        private static bool IsNumber(string input, int l)
-        {
-            if (Regex.IsMatch(input, @"^[+-]?\d*[.]?$"))
-            {
-                var num = Convert.ToDouble(input);
-                if (l == 1)
-                {
-                    if (num <= 0 || num >= 100000)
-                    {
-                        Console.WriteLine("请输入正确的出题量范围");
-                    }
-                }
-                if (l == 2)
-                {
-                    if (num <= 0 || num > 100)
-                    {
-                        Console.WriteLine("请输入正确的数据范围");
-                    }
-                }
-                return true;
-            }           
-                return false;        
-        }       
+          
         /// <summary>
         /// 公式配置与运算
         /// </summary>

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<style>
+    body
+    {
+        margin: 0,auto;
+    }
+    ul li
+    {
+        list-style: none;
+        padding-top: 10px;
+    }
+</style>
+
+<body>
+    <form>
+        <a href="Index.html">返回</a>
+    <div class="box">
+        <ul>
+            <li>
+                题目数量： <input type="text">
+            </li>
+            <li>
+                数据范围： <input type="text">
+            </li>
+            <li>
+                符号数量: <input type="text">
+            </li>
+            <li>
+                支持的符号：
+                <input type="checkbox" name="OP" value="1">+
+                <input type="checkbox" name="OP" value="2">-
+                <input type="checkbox" name="OP" value="3">x
+                <input type="checkbox" name="OP" value="4">/
+            </li>
+
+            <li>
+                是否支持分数：
+                <input type="radio" name="isFraction" value="true">是
+                <input type="radio" name="isFraction" value="false">否
+            </li>
+            <li>
+                是否支持真分数：
+                <input type="radio" name="isDecimal" value="true">是
+                <input type="radio" name="isDecimal" value="false">否
+            </li>
+            <li>
+                是否支持乘方：
+                <input type="radio" name="isInvolution" value="true">是
+                <input type="radio" name="isInvolution" value="false">否
+            </li>
+        </ul>
+    </div>
+    <input type="submit"value="确认并出题">
+    <input type="reset" value="重置">
+</form>
+</body>
+
+</html>
