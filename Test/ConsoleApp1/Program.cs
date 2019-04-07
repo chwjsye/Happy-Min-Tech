@@ -26,7 +26,7 @@ namespace ConsoleApp1
             //int s4 = Convert.ToInt32(Console.ReadLine());
             //CM21.IsGrades(s1, s2, s3, s4);
 
-           Console.Write( CM22.FractionSet(0.6,0.6));
+           Console.Write( CM22.FractionSet(0.7,0.6));
             //for (int i = 0; i <= s2; i++)
             //{
             //    Console.WriteLine(CM22.DecimalAndInteger(s3));

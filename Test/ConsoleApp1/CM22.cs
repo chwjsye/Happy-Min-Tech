@@ -28,10 +28,11 @@ namespace ConsoleApp1
                 }
             }
         }
+        //分数配置
         public static double FractionSet(double num1, double num2)
         {
             Fraction_Math Franction = new Fraction_Math();
-            int opnext = l.Next(4,5);
+            int opnext = l.Next(2,3);
             Fraction_Math result = null;
             Franction.Denominator = num1;
             Franction.Numerator = num2;
