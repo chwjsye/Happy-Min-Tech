@@ -16,17 +16,18 @@ namespace ConsoleApp1
             // Console.WriteLine(CM30.IsDouble((CM10.Shunting("60.8-54.23")).ToString()));
 
 
-            //Console.WriteLine("你是多少年级？？？？？、");
-            //int s1 = Convert.ToInt32(Console.ReadLine());
-            //Console.WriteLine("你想做多少道题？？？？？、");
-            //int s2 = Convert.ToInt32(Console.ReadLine());
-            //Console.WriteLine("你希望题中数的范围是多少？？？？？、");
-            //int s3 = Convert.ToInt32(Console.ReadLine());
-            //Console.WriteLine("你希望做多少个运算符以内的四则运算？？？？？、");
-            //int s4 = Convert.ToInt32(Console.ReadLine());
-            //CM21.IsGrades(s1, s2, s3, s4);
-            Fraction_Math Franction = new Fraction_Math();
-            Console.Write(Franction.Add(0.7,0.6).Numerator+"/"+ Franction.Add(0.7, 0.6).Denominator);
+            Console.WriteLine("你是多少年级？？？？？、");
+            int s1 = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("你想做多少道题？？？？？、");
+            int s2 = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("你希望题中数的范围是多少？？？？？、");
+            int s3 = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("你希望做多少个运算符以内的四则运算？？？？？、");
+            int s4 = Convert.ToInt32(Console.ReadLine());
+            CM21.IsGrades(s1, s2, s3, s4);
+
+            //Fraction_Math Franction = new Fraction_Math();
+            //Console.Write(Franction.Add(0.7,0.6).Numerator+"/"+ Franction.Add(0.7, 0.6).Denominator);
             //for (int i = 0; i <= s2; i++)
             //{
             //    Console.WriteLine(CM22.DecimalAndInteger(s3));
