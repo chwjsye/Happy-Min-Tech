@@ -11,6 +11,13 @@ namespace ConsoleApp1
     class CM21
     {
         //年级配置
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="grades">年级</param>
+        /// <param name="exercises">题目数量</param>
+        /// <param name="range">范围</param>
+        /// <param name="Operators">符号</param>
         public static void IsGrades(int grades, int exercises, int range, int Operators)
         {
             string[] Expression = new string[exercises];

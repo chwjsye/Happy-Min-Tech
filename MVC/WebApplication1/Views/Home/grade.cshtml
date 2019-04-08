@@ -1,0 +1,57 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<style>
+    body {
+        margin: 0,auto;
+        padding: 0;
+    }
+    a {
+        text-decoration: none;
+    }
+    ul li {
+        list-style: none;
+        padding-top: 10px;
+    }
+</style>
+<body>
+    <form name="form_name">
+        <a href="~/Home/Index"> 返回</a>
+        <ul>
+            <li>
+                <select name="select_name" onChange="GradeText(); ">
+                    <option value="1">一年级</option>
+                    <option value="2">二年级</option>
+                    <option value="3">三年级</option>
+                    <option value="4">四年级</option>
+                    <option value="3">五年级</option>
+                    <option value="4">六年级</option>
+                </select>
+            </li>
+            <li>
+                题目数量： <input type="text">
+            </li>
+            <li>
+                数据范围： <input type="text">
+            </li>
+            <li>
+                符号数量: <input type="text">
+            </li>
+            </br>
+            </br>
+            <li>
+                <input type="submit" value="确认出题">
+                <input type="reset" value="重置">
+            </li>
+        </ul>
+
+    </form>
+</body>
+
+</html>

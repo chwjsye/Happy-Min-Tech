@@ -25,8 +25,8 @@ namespace ConsoleApp1
             //Console.WriteLine("你希望做多少个运算符以内的四则运算？？？？？、");
             //int s4 = Convert.ToInt32(Console.ReadLine());
             //CM21.IsGrades(s1, s2, s3, s4);
-
-           Console.Write( CM22.FractionSet(0.7,0.6));
+            Fraction_Math Franction = new Fraction_Math();
+            Console.Write(Franction.Add(0.7,0.6).Numerator+"/"+ Franction.Add(0.7, 0.6).Denominator);
             //for (int i = 0; i <= s2; i++)
             //{
             //    Console.WriteLine(CM22.DecimalAndInteger(s3));
