@@ -51,8 +51,7 @@ namespace ConsoleApp1
         /// </summary>
         /// <param name="Range">数据范围</param>
         public static void OpNumber(int Range, int exercises, int Operators, string[] OperatorsClass, bool IsFraction, bool IsDecimal, bool IsInvolution, ref List<string> Expression, ref List<string> Answer)
-        {
-          
+        {          
             for (int i = 0; i < exercises; i++)
             {
                 bo = number.Next(1,4);
@@ -60,21 +59,15 @@ namespace ConsoleApp1
                 {
                     string[] es1 = Exercises_Fraction(Operators, OperatorsClass, calculation, IsDecimal, IsFraction, IsInvolution);
                     Expression.Add( "(" + (i + 1) + ")、" + es1[0] + "=");
-                    Answer.Add("(" + (i + 1) + ")、" + es1[1]);
-                    //Expression[i] = "(" + (i + 1) + ")、" + es1[0] + "=";
-                    //Answer[i] = "(" + (i + 1) + ")、" + es1[1];
+                    Answer.Add("(" + (i + 1) + ")、" + es1[1]);                 
                     Console.WriteLine(es1[0] + "=" + es1[1]);
                     i++;
-                }
-               
+                }               
                 string[] es = Exercises(Range, Operators, OperatorsClass, calculation, IsDecimal, IsFraction, IsInvolution);
                 Expression.Add("(" + (i + 1) + ")、" + es[0] + "=");
-                Answer.Add("(" + (i + 1) + ")、" + es[1]);
-                //Expression[i] = "(" + (i + 1) + ")、" + es[0] + "=";
-                //Answer[i] = "(" + (i + 1) + ")、" + es[1];
+                Answer.Add("(" + (i + 1) + ")、" + es[1]);               
                 Console.WriteLine(es[0] + "=" + es[1]);               
             }
-
         }
         /// <summary>
         /// 产生题目和结果
@@ -92,8 +85,7 @@ namespace ConsoleApp1
             number1 = Random_Number(IsDecimal, Range).ToString();//随机一个初始数            
             int OP = number.Next(0, Operators);//随机运算符数量         
             Formula += number1;
-            Splicing(Range, Operators, OperatorsClass, calculation, IsDecimal, ref Formula, OP);
-           
+            Splicing(Range, Operators, OperatorsClass, calculation, IsDecimal, ref Formula, OP);           
             int lbo = number.Next(1, 4);
             if (IsInvolution && lbo == 2)
             {
@@ -103,6 +95,15 @@ namespace ConsoleApp1
             Result.Add(CM10.Shunting(Formula).ToString());
             return Result.ToArray();
         }
+        /// <summary>
+        /// 产生分数的题目和结果
+        /// </summary>
+        /// <param name="Range">范围</param>
+        /// <param name="Operators">符号数</param>
+        /// <param name="OperatorsClass">符号类型</param>
+        /// <param name="calculation"></param>
+        /// <param name=" IsDecimal"></param>
+        /// <returns></returns>
         public static string[] Exercises_Fraction(int Operators, string[] OperatorsClass, string[] calculation, bool IsDecimal, bool IsFraction, bool IsInvolution)
         {
             List<string> Result = new List<string>();
@@ -115,7 +116,16 @@ namespace ConsoleApp1
             Result.Add(CM10.Shunting(Formula).ToString());
             return Result.ToArray();
         }
-
+        /// <summary>
+        /// 组成题目字符串
+        /// </summary>
+        /// <param name="Range"></param>
+        /// <param name="Operators"></param>
+        /// <param name="OperatorsClass"></param>
+        /// <param name="calculation"></param>
+        /// <param name="IsDecimal"></param>
+        /// <param name="Formula"></param>
+        /// <param name="OP"></param>
         private static void Splicing(int Range, int Operators, string[] OperatorsClass, string[] calculation, bool IsDecimal, ref string Formula, int OP)
         {
             for (int j = 0; j <= OP; j++)
@@ -130,6 +140,15 @@ namespace ConsoleApp1
                     break;
             }
         }
+        /// <summary>
+        /// 生成分数题目
+        /// </summary>
+        /// <param name="Operators"></param>
+        /// <param name="OperatorsClass"></param>
+        /// <param name="calculation"></param>
+        /// <param name="IsInvolution"></param>
+        /// <param name="Formula"></param>
+        /// <param name="OP"></param>
         private static void Splicing_Fraction( int Operators, string[] OperatorsClass, string[] calculation, bool IsInvolution, ref string Formula, int OP)
         {
             for (int j = 0; j <= OP; j++)
@@ -172,6 +191,15 @@ namespace ConsoleApp1
             }
             return false;
         }
+        /// <summary>
+        /// 对分数进行判断
+        /// </summary>
+        /// <param name="Operators"></param>
+        /// <param name="OperatorsClass"></param>
+        /// <param name="calculation"></param>
+        /// <param name="Formula"></param>
+        /// <param name="IsInvolution"></param>
+        /// <returns></returns>
         private static bool Condition_Fraction(int Operators, string[] OperatorsClass, string[] calculation, ref string Formula,bool IsInvolution)
         {
             if (!negative_fraction(CM10.Shunting(Formula).ToString()) || !IsDouble(CM10.Shunting(Formula).ToString()) && IsInvolution)

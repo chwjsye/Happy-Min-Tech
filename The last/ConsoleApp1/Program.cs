@@ -29,11 +29,11 @@ namespace ConsoleApp1
             //Console.WriteLine(s);
 
 
-            //Console.WriteLine("你是多少年级？？？？？、");
-            //int s1 = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("你是多少年级？？？？？、");
+            int s1 = Convert.ToInt32(Console.ReadLine());
 
 
-
+           
             Console.WriteLine("你想做多少道题？？？？？、");
             int s2 = Convert.ToInt32(Console.ReadLine());
             Console.WriteLine("你希望题中数的范围是多少？？？？？、");
@@ -51,10 +51,9 @@ namespace ConsoleApp1
             //}
 
             //年级配置
-            //CM21.IsGrades(s1, s2, s3, s4);
+            CM21.IsGrades(s1, s2, s3, s4);
             //用户自定义
-            CM22.ProblemSet(s2, s3, s4, calculation, true, true, true);
-
+            //CM22.ProblemSet(s2, s3, s4, calculation, true, true, false);
 
 
             //Console.WriteLine(Fraction_Math.Fraction(0.5,0.5,'+'));
@@ -69,18 +68,8 @@ namespace ConsoleApp1
 
             //string s = "(" + "1" + "+" + "3" + ")" + "*" + "10";
         }
-
-        public static string score(double d)
-        {
-            string dn = Regex.Match(d.ToString(), @"(?<=\.)\d+").Value;//去小数点
-            int denominator = 1;
-            for (int i = dn.Length; i > 0; i--)
-            {
-                denominator *= 10;
-            }
-            double[] sr = score_reduction(d * denominator, denominator);
-            return sr[0].ToString() + "/" + sr[1].ToString();
-        }
+        
+      
         /// <summary>
         /// 分数化简
         /// </summary>

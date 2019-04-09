@@ -22,8 +22,6 @@ namespace ConsoleApp1
         /// <param name="Operators">符号</param>
         public static void IsGrades(int grades, int exercises, int range, int Operators)
         {
-
-
             List<string> Expression = new List<string>();
             List<string> Answer = new List<string>();
             switch (grades)

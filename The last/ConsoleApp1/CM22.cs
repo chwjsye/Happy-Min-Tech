@@ -29,12 +29,12 @@ namespace ConsoleApp1
             int Rannum = l.Next(1, 3);
             if (isFraction && Rannum == 1)//带分数
             {
-                CM30.OpNumber(range, exercises, operators, operatorClass, true, true, true, ref Expression, ref Answer);
+                CM30.OpNumber(range, exercises, operators, operatorClass, true, true, false, ref Expression, ref Answer);
                 CM21.Injection(Expression.ToArray(), Answer.ToArray());
             }
             else//带小数
             {
-                CM30.OpNumber(range, exercises, operators, operatorClass, false, true, true, ref Expression, ref Answer);
+                CM30.OpNumber(range, exercises, operators, operatorClass, false, true, false, ref Expression, ref Answer);
                 CM21.Injection(Expression.ToArray(), Answer.ToArray());
             }
 

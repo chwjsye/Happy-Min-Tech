@@ -3,15 +3,36 @@
   <Class Name="ConsoleApp1.CM10">
     <Position X="1.25" Y="0.5" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AACAAAAAAAAAABAAgAAAAAAAAAAAAAAAAAAIAAAAAAA=</HashCode>
+      <HashCode>AAAAAAAIMESAAAAFAACAAAAQAAAAAAAAAAAAAAAAgAA=</HashCode>
       <FileName>CM10.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="ConsoleApp1.CM30">
     <Position X="3.25" Y="0.5" Width="2.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAIQAAAAAAAAAICAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <HashCode>AAAAEAAQAICAQIAEACHIQgAAABEAAAAAAAwACAAACAA=</HashCode>
       <FileName>CM30.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ConsoleApp1.CM21">
+    <Position X="6" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAgAIAAQAAAAAAAAAAAAAEAAAAAAAA=</HashCode>
+      <FileName>CM21.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ConsoleApp1.CM22">
+    <Position X="8.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAQAQAAAAAAAAAAABAAAAAAAAAA=</HashCode>
+      <FileName>CM22.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ConsoleApp1.Fraction_Math">
+    <Position X="1.25" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EAIAEAAIAAgAAAgAEAAAAAAAABAAEAEAIAAQAAAAAAQ=</HashCode>
+      <FileName>Fraction_Math.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Font Name="Microsoft YaHei UI" Size="9" />
