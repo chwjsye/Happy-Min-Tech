@@ -31,3 +31,9 @@ C:\Users\Administrator\Desktop\Test\ConsoleApp1\bin\Debug\ConsoleApp1.pdb
 C:\Users\Administrator\Desktop\Test\ConsoleApp1\obj\Debug\ConsoleApp1.exe
 C:\Users\Administrator\Desktop\Test\ConsoleApp1\obj\Debug\ConsoleApp1.pdb
 C:\Users\Administrator\Desktop\TEst\ConsoleApp1\obj\Debug\ConsoleApp1.csprojResolveAssemblyReference.cache
+G:\程序\柳职\四则结对\Happy-Min-Tech\The last\ConsoleApp1\bin\Debug\ConsoleApp1.exe.config
+G:\程序\柳职\四则结对\Happy-Min-Tech\The last\ConsoleApp1\obj\Debug\ConsoleApp1.exe
+G:\程序\柳职\四则结对\Happy-Min-Tech\The last\ConsoleApp1\obj\Debug\ConsoleApp1.pdb
+G:\程序\柳职\四则结对\Happy-Min-Tech\The last\ConsoleApp1\obj\Debug\ConsoleApp1.csprojResolveAssemblyReference.cache
+G:\程序\柳职\四则结对\Happy-Min-Tech\The last\ConsoleApp1\bin\Debug\ConsoleApp1.exe
+G:\程序\柳职\四则结对\Happy-Min-Tech\The last\ConsoleApp1\bin\Debug\ConsoleApp1.pdb

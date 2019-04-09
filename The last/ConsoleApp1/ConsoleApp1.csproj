@@ -44,7 +44,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Brackets.cs" />
+    <Compile Include="Involution.cs" />
     <Compile Include="CM10.cs" />
     <Compile Include="CM21.cs" />
     <Compile Include="CM22.cs" />

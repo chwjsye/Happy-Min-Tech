@@ -55,8 +55,8 @@ namespace ConsoleApp1
           
             for (int i = 0; i < exercises; i++)
             {
-                bo = number.Next(1, 10);
-                if (IsFraction&&bo<5)
+                bo = number.Next(1,4);
+                if (IsFraction&&bo==1)
                 {
                     string[] es1 = Exercises_Fraction(Operators, OperatorsClass, calculation, IsDecimal, false, false);
                     Expression.Add( "(" + (i + 1) + ")、" + es1[0] + "=");
@@ -66,6 +66,7 @@ namespace ConsoleApp1
                     Console.WriteLine(es1[0] + "=" + es1[1]);
                     i++;
                 }
+               
                 string[] es = Exercises(Range, Operators, OperatorsClass, calculation, IsDecimal, false, false);
                 Expression.Add("(" + (i + 1) + ")、" + es[0] + "=");
                 Answer.Add("(" + (i + 1) + ")、" + es[1]);
@@ -93,6 +94,11 @@ namespace ConsoleApp1
             Formula += number1;
             Splicing(Range, Operators, OperatorsClass, calculation, IsDecimal, ref Formula, OP);
             Result.Add(Formula);
+            bo = number.Next(1, 4);
+            if (IsInvolution && bo == 2)
+            {
+                Formula= Involution.Generate(Formula, Operators);
+            }
             Result.Add(CM10.Shunting(Formula).ToString());
             return Result.ToArray();
         }

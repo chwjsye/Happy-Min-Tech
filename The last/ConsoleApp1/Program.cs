@@ -17,9 +17,9 @@ namespace ConsoleApp1
             //double t = 1.1;
             //string st = t.ToString();
             //s.Push(Convert.ToDouble( st));
-            //string a = "9/3＋12/3";
+            //string a = "10＋12－50＋60×2";
             //Console.WriteLine(CM10.Shunting(a));
-
+            // Involution.Generate(a, 3);
             //  Console.WriteLine(CM30.Random_Fraction());
 
             // Console.WriteLine(CM11.Shunting("(2＋1)×2"));
@@ -33,12 +33,13 @@ namespace ConsoleApp1
             //int s1 = Convert.ToInt32(Console.ReadLine());
 
 
-            //Console.WriteLine("你想做多少道题？？？？？、");
-            //int s2 = Convert.ToInt32(Console.ReadLine());
-            //Console.WriteLine("你希望题中数的范围是多少？？？？？、");
-            //int s3 = Convert.ToInt32(Console.ReadLine());
-            //Console.WriteLine("你希望做多少个运算符以内的四则运算？？？？？、");
-            //int s4 = Convert.ToInt32(Console.ReadLine());
+
+            Console.WriteLine("你想做多少道题？？？？？、");
+            int s2 = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("你希望题中数的范围是多少？？？？？、");
+            int s3 = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("你希望做多少个运算符以内的四则运算？？？？？、");
+            int s4 = Convert.ToInt32(Console.ReadLine());
 
             //符号配置{ "＋", "－", "×", "÷" };
             //calculation = new string[] { "＋", "－", "×", "÷" };
@@ -48,11 +49,11 @@ namespace ConsoleApp1
             //{
             //    Console.WriteLine(i);
             //}
-           
+
             //年级配置
             //CM21.IsGrades(s1, s2, s3, s4);
             //用户自定义
-            //CM22.ProblemSet(s2, s3, s4, calculation, false, true, false);
+            CM22.ProblemSet(s2, s3, s4, calculation, false, true, true);
 
 
 
