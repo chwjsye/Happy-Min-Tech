@@ -58,7 +58,7 @@ namespace ConsoleApp1
                 bo = number.Next(1,4);
                 if (IsFraction&&bo==1)
                 {
-                    string[] es1 = Exercises_Fraction(Operators, OperatorsClass, calculation, IsDecimal, false, false);
+                    string[] es1 = Exercises_Fraction(Operators, OperatorsClass, calculation, IsDecimal, IsFraction, IsInvolution);
                     Expression.Add( "(" + (i + 1) + ")、" + es1[0] + "=");
                     Answer.Add("(" + (i + 1) + ")、" + es1[1]);
                     //Expression[i] = "(" + (i + 1) + ")、" + es1[0] + "=";
@@ -67,7 +67,7 @@ namespace ConsoleApp1
                     i++;
                 }
                
-                string[] es = Exercises(Range, Operators, OperatorsClass, calculation, IsDecimal, false, false);
+                string[] es = Exercises(Range, Operators, OperatorsClass, calculation, IsDecimal, IsFraction, IsInvolution);
                 Expression.Add("(" + (i + 1) + ")、" + es[0] + "=");
                 Answer.Add("(" + (i + 1) + ")、" + es[1]);
                 //Expression[i] = "(" + (i + 1) + ")、" + es[0] + "=";
@@ -93,12 +93,13 @@ namespace ConsoleApp1
             int OP = number.Next(0, Operators);//随机运算符数量         
             Formula += number1;
             Splicing(Range, Operators, OperatorsClass, calculation, IsDecimal, ref Formula, OP);
-            Result.Add(Formula);
-            bo = number.Next(1, 4);
-            if (IsInvolution && bo == 2)
+           
+            int lbo = number.Next(1, 4);
+            if (IsInvolution && lbo == 2)
             {
                 Formula= Involution.Generate(Formula, Operators);
             }
+            Result.Add(Formula);
             Result.Add(CM10.Shunting(Formula).ToString());
             return Result.ToArray();
         }

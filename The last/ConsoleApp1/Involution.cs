@@ -25,17 +25,16 @@ namespace ConsoleApp1
                     l++;
                 }
             }
-           return(InvolutionSet(exe, opcount));
+           return InvolutionSet( exe, opcount);
         }
         public static string InvolutionSet(string exe, List<int> opcount)
         {
-            int ran = num.Next(0, opcount.Count);
             int rannum = num.Next(2, 5);
             foreach (int i in opcount)
             { 
               exe = exe.Insert(i, "^" + rannum);
             }
-            return exe + "=" + CM10.Shunting(exe); ;
+            return exe;
         }
     }
 }

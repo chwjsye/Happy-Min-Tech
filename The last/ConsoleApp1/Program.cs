@@ -53,7 +53,7 @@ namespace ConsoleApp1
             //年级配置
             //CM21.IsGrades(s1, s2, s3, s4);
             //用户自定义
-            CM22.ProblemSet(s2, s3, s4, calculation, false, true, true);
+            CM22.ProblemSet(s2, s3, s4, calculation, true, true, true);
 
 
 

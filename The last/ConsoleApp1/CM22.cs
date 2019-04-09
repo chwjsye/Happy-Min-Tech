@@ -34,7 +34,7 @@ namespace ConsoleApp1
             }
             else//带小数
             {
-                CM30.OpNumber(range, exercises, operators, operatorClass, false, true, false, ref Expression, ref Answer);
+                CM30.OpNumber(range, exercises, operators, operatorClass, false, true, true, ref Expression, ref Answer);
                 CM21.Injection(Expression.ToArray(), Answer.ToArray());
             }
 

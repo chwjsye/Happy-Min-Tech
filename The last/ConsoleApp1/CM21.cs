@@ -50,7 +50,7 @@ namespace ConsoleApp1
                     Injection(Expression.ToArray(), Answer.ToArray());
                     break;
                 case 6:
-                    CM30.OpNumber(range, exercises, Operators, calculation, true, true, false, ref Expression, ref Answer);
+                    CM30.OpNumber(range, exercises, Operators, calculation, true, true, true, ref Expression, ref Answer);
                     Injection(Expression.ToArray(), Answer.ToArray());
                     break;
                 default: break;
